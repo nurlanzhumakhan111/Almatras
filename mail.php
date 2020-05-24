@@ -11,7 +11,7 @@ $phone = $_POST['user_phone'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'testformy21@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = 'Testform1'; // Ваш пароль от почты с которой будут отправляться письма

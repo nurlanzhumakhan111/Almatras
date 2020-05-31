@@ -89,9 +89,27 @@ document.addEventListener('DOMContentLoaded', () => {
     then close all select boxes: */
     document.addEventListener("click", closeAllSelect);
 
-    document.addEventListener('scroll', ()=> {
+    document.addEventListener('scroll', () => {
         // let scrolledY = document.scroll();
         let headerCnt = document.querySelector('.header-content');
         headerCnt.style.backgroundPosition = `center ${-20 + pageYOffset}px`
+    })
+
+    //FORM
+
+    let message = {
+        loading: 'Загрузка',
+        success: 'Спасибо! Скоро мы с вами свяжемся',
+        failure: 'Что-то пошло не так...',
+    }
+
+    let form = document.querySelector('.form_send'),
+        input = form.getElementsByTagName('input'),
+        statusMessage = document.createElement('div');
+
+    statusMessage.classList.add('status');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault()
     })
 });

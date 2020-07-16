@@ -88,13 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     /* If the user clicks anywhere outside the select box,
     then close all select boxes: */
     document.addEventListener("click", closeAllSelect);
-
-    document.addEventListener('scroll', () => {
-        // let scrolledY = document.scroll();
-        let headerCnt = document.querySelector('.header-content');
-        headerCnt.style.backgroundPosition = `center ${-20 + pageYOffset}px`
-    })
-
     //FORM
 
     let message = {
